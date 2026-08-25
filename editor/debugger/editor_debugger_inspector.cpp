@@ -92,7 +92,7 @@ void EditorDebuggerRemoteObjects::_get_property_list(List<PropertyInfo> *p_list)
 }
 
 void EditorDebuggerRemoteObjects::set_property_field(const StringName &p_property, const Variant &p_value, const String &p_field) {
-	_set_impl(p_property, p_value, "");
+	_set_impl(p_property, p_value, p_field);
 }
 
 String EditorDebuggerRemoteObjects::get_title() {
